@@ -4,10 +4,10 @@ SECTION .text
 ; int CountEvens(const int *arr, const size_t size)
 ; RCX = const int *arr
 ; RDX = const size_t size
-; RAX = total sum
+; RAX = total even counts
 
 CountEvens:
-    XOR RAX, RAX    ; Clear RAX (will hold the sum)
+    XOR RAX, RAX    ; Clear RAX (will hold the number of even counts)
     XOR R9, R9      ; R9 = index = 0
 
 loop_CountEvens:
