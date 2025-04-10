@@ -21,13 +21,6 @@ int main()
 {
     constexpr std::array<int, 10> arr = {10, 20, 30, 40, 50, 50, 60, 70, 80, 90};
     int result = SumArray(arr.data(), arr.size());
-    if (result == -1)
-    {
-        std::cout << "Indexing error or Empty Array";
-    }
-    else
-    {
-        std::cout << result;
-    }
+    std::cout << result;
     return 0;
 }
